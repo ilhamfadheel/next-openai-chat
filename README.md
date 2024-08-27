@@ -2,6 +2,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+ADD YOUR OPEN AI KEY TO THE `.env` FILE
+
+```bash
+OPENAI_API_KEY= sk- xxx
+````
+
+install dependencies and run the development server:
+
+```bash
 First, run the development server:
 
 ```bash
