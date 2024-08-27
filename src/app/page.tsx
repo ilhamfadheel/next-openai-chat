@@ -2,6 +2,7 @@
 
 import { useChat } from "ai/react";
 import { useEffect, useRef } from "react";
+import { marked } from "marked";
 
 export default function Chat() {
     const {
@@ -33,9 +34,8 @@ export default function Chat() {
                                 ? "bg-green-700 p-3 m-2 rounded-lg"
                                 : "bg-slate-700 p-3 m-2 rounded-lg"
                         }`}
+                        dangerouslySetInnerHTML={{ __html: marked(m.content) }}
                     >
-                        {m.role === "user" ? "User: " : "AI: "}
-                        {m.content}
                     </div>
                 ))}
 
